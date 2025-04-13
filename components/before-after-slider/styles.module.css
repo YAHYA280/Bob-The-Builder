@@ -1,0 +1,25 @@
+.container {
+  cursor: ew-resize;
+  user-select: none;
+  touch-action: none;
+}
+
+.sliderLine {
+  transition: left 0.05s ease-out;
+}
+
+.dragging .sliderLine {
+  transition: none;
+}
+
+.sliderHandle {
+  cursor: grab;
+}
+
+.dragging .sliderHandle {
+  cursor: grabbing;
+}
+
+.focused .sliderLine {
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.5);
+}
