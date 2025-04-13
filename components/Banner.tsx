@@ -11,14 +11,20 @@ export default function Banner() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-16 pb-32 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#331d0f] leading-tight">
+      <section
+        className="relative z-10 pt-28 pb-44 px-6 min-h-[650px] flex items-center"
+        aria-labelledby="hero-heading"
+      >
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <h1
+              id="hero-heading"
+              className="text-4xl md:text-6xl font-bold text-[#331d0f] leading-tight"
+            >
               Is uw woning toe aan een opknapbeurt?
             </h1>
 
-            <p className="text-lg text-[#331d0f]">
+            <p className="text-lg md:text-xl text-[#331d0f] max-w-xl leading-relaxed">
               Kies voor Buru Construction en profiteer van onze alles-in-één
               renovatieservice, zodat u met een gerust hart alles aan één
               vertrouwd bedrijf kunt overlaten. Kwaliteit, gemak en
@@ -27,19 +33,21 @@ export default function Banner() {
 
             <Link
               href="/renoveren"
-              className="inline-block bg-[#ff8c00] text-white px-8 py-4 rounded-md font-medium hover:bg-[#f5621f] transition-colors text-lg"
+              className="inline-block bg-[#ff8c00] text-white px-8 py-4 rounded-md font-medium hover:bg-[#f5621f] transition-colors text-lg shadow-md"
+              aria-label="Renovatie aanvragen"
             >
               Ja, ik wil mijn huis renoveren!
             </Link>
           </div>
 
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end mt-8 md:mt-0">
             <Image
               src="/mascot.png"
               alt="Buru Construction Mascot"
-              width={400}
-              height={500}
-              className="h-auto w-full max-w-md"
+              width={500}
+              height={600}
+              className="h-auto w-full max-w-md object-contain"
+              priority
             />
           </div>
         </div>
