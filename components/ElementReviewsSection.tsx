@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { CustomerReviewsSection } from "@/components/sections/CustomerReviewSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 
@@ -12,15 +11,18 @@ export function ElementReviewsSection() {
       <HeroSection />
 
       {/* Reviews slider section */}
-      <div className="py-10 w-full">
+      <div className="py-6 w-full">
         <CustomerReviewsSection />
       </div>
 
       {/* CTA Button */}
-      <div className="flex items-center justify-center gap-3 w-full py-10 px-4">
-        <Button className="px-8 py-4 bg-[#ff8c00] hover:bg-[#f5621f] text-white font-bold text-lg rounded-md border-[3px] border-solid border-[#ffb100] shadow-md">
+      <div className="flex items-center justify-center w-full py-10 px-4">
+        <a
+          href="/contact"
+          className="px-8 py-4 bg-[#ff8c00] hover:bg-[#f5621f] text-white font-bold text-lg rounded-md border-[3px] border-solid border-[#ffb100] shadow-md text-center"
+        >
           Een klus bespreken? Bel nu!
-        </Button>
+        </a>
       </div>
     </section>
   );
